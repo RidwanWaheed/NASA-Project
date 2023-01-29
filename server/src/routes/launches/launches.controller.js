@@ -35,7 +35,6 @@ async function httpaddNewLaunch(req, res) {
     });
   }
   await ScheduleNewLaunch(launch);
-  console.log(launch);
   return res.status(201).json(launch);
 }
 
